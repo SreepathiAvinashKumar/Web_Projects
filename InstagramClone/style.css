@@ -1,0 +1,347 @@
+@font-face {
+    font-family: instagram-font;
+    src: url("/InstagramClone/instagram-font.com/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --list-icon-width:25px;
+    --list-icon-height:25px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.content{
+    cursor: pointer;
+}
+
+.repsonsive-nav-bar{
+display: none;
+    /* background-color: yellow; */
+}
+.repsonsive-nav-bar > input{
+    border-radius: 10px;
+    width: 260px;
+    background-color: whitesmoke;
+    font-size: 1em;
+    padding:8px;
+    margin: 7px;
+    outline: none;
+    border: none;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    font-family: instagram-font;
+    margin: 15px 0 20px 20px;
+    font-weight: 500;
+}
+#title-responsive {
+    font-family: instagram-font;
+    margin-left: 10px;
+    padding: 0px;
+    display: inline;
+}
+.side-bar{
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.226);
+    width: 230px;
+    height: auto;
+    position: fixed;
+}
+.icon{
+    width: var(--list-icon-width);
+    height:var(--list-icon-height);
+    transition: all 0.2s ease-in;
+}
+.list-item:hover{
+    background-color: rgba(109, 123, 136, 0.24);
+    border-radius: 10px;
+}
+.list-item > a:active{
+    background-color: rgba(109, 123, 136, 0.342);
+    font-weight: bold;
+}
+
+.icon:hover{
+    --list-icon-width:26px;
+    --list-icon-height:26px;
+}
+
+#list-items{
+    padding: 20px;
+}
+
+.list-item{
+    list-style-type: none;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex; 
+    padding:  0 5px 0 5px;
+    border-radius: 5px;
+    transition: all 0.6s ease-in-out;
+}
+.list-item > a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 14px;
+    text-align: center;
+}
+.hamburger-menu >div{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+}
+
+.hamburger-menu {
+    text-align: center;
+}
+#list-menu{
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+.main-bar{
+    position: relative;
+    width: calc(100%-300px);
+    top: 0;
+    left:25%;
+}
+
+
+.status-bar{
+    display: flex;
+    margin: 20px 0 0 0;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.status-container-medium{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    padding: 2px;
+    background-color: rgb(194, 218, 62);
+}
+.status-container-inner{
+    border:  rgba(197, 15, 54, 0.801) solid 2px;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+
+background-image: url("status-pic.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.status-container-outer > p{
+font-size: 0.75em;
+margin: 3px 0px 5px 0px;
+font-family: sans-serif;
+}
+.status-container-outer {
+    margin-right:20px ;
+}
+
+
+
+/* post-content */
+
+.content-container > .content-heading{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 10px 0 0 10px;
+    
+}
+.content-container > .content-heading > p {
+    margin: 10px;
+    font-size: .9em;
+
+}
+.content-box > img{
+    height:100%;
+    padding: 15px;
+    width: 100%;
+}
+.content-box{
+    width: 400px;
+    height: auto;
+
+}
+.content{
+    width: calc(100%-250px);
+    margin-right: 200px;
+}
+.content-container {
+    width:100%;
+    height: auto;
+    margin: 20px 0 50px 0;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.616);
+    flex-wrap: wrap;
+}
+
+.content-container  span{
+font-weight: 500 !important;
+font-size: 0.8em;
+}
+.flow-bar{
+    
+margin-right: 3rem;
+}
+.post-icon{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
+.content-icon-section{
+    padding: 5px;
+    margin: 0;
+    width: 400px;
+}
+
+.extra-info >p{
+ font-size: .9em;
+}
+.right-container{
+    cursor: pointer;
+}
+
+.suggestions >h5{
+    color: rgba(0, 0, 0, 0.438);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+
+.con-image,.suggested-user-container{
+    display:flex;
+    font-family: sans-serif;
+    align-items: center;
+    margin-top: 15px;
+}
+.con-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 50%;
+    margin-left: 5px;
+}
+.follow-text{
+    float: right;
+    margin-left: 40px;
+    color: rgb(36, 123, 236);
+    font-size: .75em;
+    font-weight: bold;
+}
+.con-image > p{
+    font-size: 0.8em;
+}
+
+.switch-account{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
+.suggested-user-img{
+
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    margin: 5px;
+}
+.right-container{
+    /* background-color: yellow; */
+    width: auto;
+    padding: 30px;
+}
+
+@media only screen and (max-width:940px){
+.list-item > a{
+    display: none;
+}
+.list-item > img{
+  margin: 8px 0 8px 0;
+}
+.list-item{
+    padding: 0;
+}
+.title-sidebar h2{
+    display: none;
+}
+.side-bar{
+    margin-top: 15px;
+    width: 65px;
+}
+.main-bar{
+    width: calc(100%-65px);
+    left:17%;
+}
+.hamburger-menu{
+    transform: translate(-10px);
+}
+.right-container{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    .side-bar{
+        display: none;
+    }
+    .main-bar{
+        margin: 15px;
+        left: 2%;
+    }
+    .repsonsive-nav-bar{
+        display: flex !important;
+        justify-content: space-evenly;
+        transform: translate(-35px);
+        width: 75%;
+    }
+    .content{
+        margin: 0;
+    }
+}
+    
+}
+.footer-list-items{
+    list-style-type: none;
+    display: flex;
+    font-size: .75em ;
+    margin-top: 40px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.301);
+}
+.footer-list-item{
+margin-left: 5px;
+}
+.footer-list-item-2{
+ margin-right: 10px;
+}
+.footer-list-items-2{
+    list-style-type: none;
+    display: flex;
+    font-size: .75em ;
+    margin: 5px 0 0 5px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.315);
+}
